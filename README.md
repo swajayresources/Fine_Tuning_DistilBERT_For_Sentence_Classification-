@@ -8,3 +8,10 @@ Our goal is to classify each review into positive or negative sentiment categori
 
 
 For further reading on BERT and DistilBERT, refer to the original BERT paper here and the DistilBERT paper [here](https://arxiv.org/abs/1910.01108).
+
+
+
+# 2 - Fine-tuning
+
+Fine-tuning DistilBERT involves training the model on our specific dataset to adjust all of its weights, including those in the transformer layers and not just the final classifier layer. This comprehensive update allows the model to better adapt to the nuances of our sentiment analysis task. We use the AdamW optimizer for efficient weight adjustments and train over several epochs, monitoring loss to gauge progress. This method ensures that the model becomes finely tuned to our specific classification challenge, leveraging the full power of DistilBERT's pre-trained knowledge and making it more effective for our dataset.
+
